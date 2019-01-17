@@ -11,10 +11,10 @@ declare(strict_types=1);
 
 namespace Gox\Laravel\Likeable\Providers;
 
-use Gox\Laravel\Likeable\Console\Commands\RecountCommand;
-use Gox\Laravel\Likeable\Like\Models\Like as LikeContract;
+use Gox\Contracts\Likeable\Like\Models\Like as LikeContract;
 use Gox\Contracts\Likeable\LikeCounter\Models\LikeCounter as LikeCounterContract;
 use Gox\Contracts\Likeable\Likeable\Services\LikeableService as LikeableServiceContract;
+use Gox\Laravel\Likeable\Console\Commands\RecountCommand;
 use Gox\Laravel\Likeable\Like\Models\Like;
 use Gox\Laravel\Likeable\Like\Observers\LikeObserver;
 use Gox\Laravel\Likeable\Likeable\Services\LikeableService;
