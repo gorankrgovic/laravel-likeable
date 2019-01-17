@@ -47,7 +47,7 @@ trait Likeable
     /**
      * @return mixed
      */
-    public function collectLikes()
+    public function collectLikers()
     {
         return app(LikeableServiceContract::class)->collectLikersOf($this);
     }
