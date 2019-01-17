@@ -1,0 +1,70 @@
+{
+  "name": "gorankrgovic/laravel-likeable",
+  "description": "Make Laravel Eloquent models Likeable using UUIDs.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "goran",
+    "krgovic",
+    "laravel",
+    "eloquent",
+    "trait",
+    "like",
+    "unlike",
+    "uuid"
+  ],
+  "authors": [
+    {
+      "name": "Goran Krgovic",
+      "email": "gorankrgovic1@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "homepage": "https://github.com/gorankrgovic/laravel-likeable",
+  "support": {
+    "email": "gorankrgovic1@gmail.com",
+    "issues": "https://github.com/gorankrgovic/laravel-likeable/issues",
+    "wiki": "https://github.com/gorankrgovic/laravel-likeable/wiki",
+    "source": "https://github.com/gorankrgovic/laravel-likeable",
+    "docs": "https://github.com/gorankrgovic/laravel-likeable/wiki"
+  },
+  "require": {
+    "php": "^7.0",
+    "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
+    "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
+    "ramsey/uuid": "^3.8"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.10",
+    "mockery/mockery": "^1.0",
+    "orchestra/database": "~3.5.0|~3.6.0|~3.7.0",
+    "orchestra/testbench": "~3.5.0|~3.6.0|~3.7.0",
+    "phpunit/phpunit": "^6.0|^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gox\\Contracts\\Likeable\\": "contracts/",
+      "Gox\\Laravel\\Likeable\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gox\\Tests\\Laravel\\Likeable\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Gox\\Laravel\\Likeable\\Providers\\LikeableServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true
+}
